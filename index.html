@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Cost Slider</title>
+        <link href="styles.css" type="text/css" rel="stylesheet" />
+        <script src="scripts.js" defer></script>
+</head>
+
+    <body>
+      <main>
+        <section class="titleContainer">
+          <div>
+            <h2>Simple, traffic-based pricing </h2>
+            <p> Sign-up for our 30-day trial. No credit card required.</p>
+          </div>
+        </section>
+          <section class="contentContainer">
+            <div class="viewsAndPricingContainer">
+              <div class="pageViewsText">
+              <p><span id="pageViews">100k</span> Pageviews</p>
+              </div>
+              <div class="priceText">
+              <p><span id="price">£16.00</span> /month</p>
+              </div>
+            </div>
+            <div class="slideContainer">
+              <input type="range" min="1" max="100" value="50" id="slider">
+            </div>
+            <div class = "switchContainer">
+              <p>Monthly</p>
+              <label class="switch">
+              <input type="checkbox" id="monthToYear">
+              <span class="slide round"></span>
+              </label>
+              <p>Yearly</p>
+              <p id="discount">25% discount</p>
+            </div>
+            <div class="line">
+              <hr id="solid">
+            </div>
+            <div class="trialContainer">
+              <ul>
+                <li class="bulletPoint">Unlimited websites</li>
+                <li class="bulletPoint">100% data ownership</li>
+                <li class="bulletPoint">Email reports</li>
+              </ul>
+              <div>
+                <button id="startMyTrialButton">Start my trial</button>
+              </div>
+            </div>
+              </section>
+        </main>
+    </body>
